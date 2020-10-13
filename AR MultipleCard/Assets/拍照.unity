@@ -213,7 +213,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100068, guid: b2f29bedc01897d448f4f3e00b5e406d, type: 3}
       propertyPath: m_Name
-      value: sheep_walk
+      value: "\u7F8A \u8D70\u8DEF"
       objectReference: {fileID: 0}
     - target: {fileID: 400068, guid: b2f29bedc01897d448f4f3e00b5e406d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -282,7 +282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100064, guid: 9e25bfa154c881844bb628863f9d5a94, type: 3}
       propertyPath: m_Name
-      value: Idle
+      value: "\u9D28 \u9592\u7F6E"
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 9e25bfa154c881844bb628863f9d5a94, type: 3}
       propertyPath: m_LocalPosition.x

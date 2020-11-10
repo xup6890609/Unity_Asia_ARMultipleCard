@@ -26,9 +26,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         print ("開事件執行");  
-    }
+    } 
+  
     // 更新事件(影格) //控制旋轉、移動、縮放或玩家輸入
     private void Update()
+       
     { print("更新事件");
         print(Joystick.Vertical);
 
@@ -36,12 +38,18 @@ public class GameManager : MonoBehaviour
         Duck.Rotate(0, Joystick.Horizontal * turn, 0);
 
         Sheep.localScale += new Vector3(1, 1, 1) * Joystick.Vertical * size;
+        Sheep.localScale = new Vector3(1, 1, 1) * Mathf.Clamp(Sheep.localScale.x, 0.1f, 0.3f);
+
+        Duck.localScale = new Vector3(1, 1, 1) * Mathf.Clamp(Duck.localScale.x, 0.1f, 0.3f);
+        Duck.localScale += new Vector3(1, 1, 1) * Joystick.Vertical * size;
+       
     }
         //public void Walk()
-        //{
+        // {
         // print("走路");
-        //aniSheep.SetTrigger("走路 觸發");
-        //aniDuck.SetTrigger("走路 觸發");
+        // aniSheep.SetTrigger("走路 觸發");
+        // aniDuck.SetTrigger("走路 觸發");
+        // }
         public void PlayAnimation(string aniName)
     {   
         print(aniName);
